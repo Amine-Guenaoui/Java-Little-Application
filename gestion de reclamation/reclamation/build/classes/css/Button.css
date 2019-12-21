@@ -1,0 +1,33 @@
+#red{
+
+    -fx-background-color: linear-gradient(#ff5400,#be1d00);
+    -fx-background-radius: 30;
+    
+    -fx-text-fill: white;
+
+}
+
+#green
+{
+    -fx-background-color:
+            linear-gradient(#f0ff35,#a9ff00),
+            radial-gradient(center 50% -40%, radius 30%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 30;
+ 
+}
+
+#glass_g {
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+#dark_b {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+    -fx-background-radius: 30;
+}

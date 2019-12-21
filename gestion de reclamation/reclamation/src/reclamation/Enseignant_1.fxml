@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamation.EnseignantController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="316.0" prefWidth="414.0">
+         <children>
+            <ImageView fitHeight="338.0" fitWidth="446.0" layoutX="-22.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/study.jpg" />
+               </image>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </ImageView>
+            <Label layoutX="53.0" layoutY="-7.0" text="Espace Ensegniant">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="7.0" layoutY="181.0" mnemonicParsing="false" onAction="#change" prefHeight="93.0" prefWidth="77.0" text="Retour" />
+            <Label layoutX="50.0" layoutY="31.0" text="User:">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <TableView layoutX="81.0" layoutY="56.0" prefHeight="219.0" prefWidth="295.0">
+              <columns>
+                <TableColumn prefWidth="227.0" text="Liste des reclamations" />
+                <TableColumn prefWidth="81.0" text="Date" />
+              </columns>
+            </TableView>
+            <Label layoutX="182.0" layoutY="39.0" />
+            <ScrollBar layoutX="375.0" layoutY="56.0" orientation="VERTICAL" prefHeight="219.0" prefWidth="14.0" />
+            <Button layoutX="6.0" layoutY="81.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Reclamation " />
+            <Button layoutX="6.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Historiques" />
+            <Button layoutX="6.0" layoutY="156.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Supprimer" />
+            <Button layoutX="7.0" layoutY="131.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Modifer" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

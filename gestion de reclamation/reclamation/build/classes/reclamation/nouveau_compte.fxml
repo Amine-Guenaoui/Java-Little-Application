@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="10.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamation.Nouveau_compteController">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="661.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fond_slide1.jpg" />
+         </image>
+      </ImageView>
+      <TextField id="glass_g" fx:id="nom" layoutX="141.0" layoutY="205.0" prefHeight="25.0" prefWidth="178.0" promptText="votre nom" stylesheets="@../css/Button.css" />
+      <TextField id="glass_g" fx:id="prenom" layoutX="350.0" layoutY="205.0" prefHeight="25.0" prefWidth="178.0" promptText="votre prenom" stylesheets="@../css/Button.css" />
+      <TextField id="glass_g" fx:id="specialite" layoutX="141.0" layoutY="263.0" prefHeight="25.0" prefWidth="178.0" promptText="voytre specialite" stylesheets="@../css/Button.css" />
+      <PasswordField id="glass_g" fx:id="num" layoutX="354.0" layoutY="264.0" prefHeight="25.0" prefWidth="178.0" promptText="votre num" stylesheets="@../css/Button.css" />
+      <Label layoutX="144.0" layoutY="180.0" text="Nom">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5dfdfe9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="143.0" layoutY="239.0" stylesheets="@../css/Button.css" text="Specialite">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5dfdfe9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="353.0" layoutY="180.0" text="Prenom">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5dfdfe9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="357.0" layoutY="240.0" text="Num">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5dfdfe9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button id="green" layoutX="248.0" layoutY="412.0" mnemonicParsing="false" onAction="#Creation_nv" prefHeight="30.0" prefWidth="178.0" stylesheets="@../css/Button.css" text="Valider">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="103.0" layoutY="379.0" textFill="#ed0505" />
+      <Button id="red" layoutX="247.0" layoutY="454.0" mnemonicParsing="false" onAction="#Retour" prefHeight="31.0" prefWidth="178.0" stylesheets="@../css/Button.css" text="Connecter" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Label layoutX="146.0" layoutY="298.0" text="Mot de passe">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5dfdfe9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <PasswordField id="glass_g" fx:id="mot_p" layoutX="142.0" layoutY="321.0" prefHeight="25.0" prefWidth="178.0" promptText="votre mot de passe" stylesheets="@../css/Button.css" />
+      <Label layoutX="354.0" layoutY="298.0" text="Confirmer mot de passe">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5dfdfe9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <PasswordField id="glass_g" layoutX="353.0" layoutY="321.0" prefHeight="25.0" prefWidth="178.0" promptText="confirmer mot de passe" stylesheets="@../css/Button.css" />
+      <TextField id="glass_g" fx:id="User" layoutX="250.0" layoutY="375.0" prefHeight="25.0" prefWidth="178.0" promptText="Votre User" stylesheets="@../css/Button.css" />
+      <Label layoutX="252.0" layoutY="350.0" text="Nom Utilisateur">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5dfdfe9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="98.0" layoutY="94.0" prefHeight="104.0" prefWidth="530.0" text="Inscrivez vous!" textFill="#000000f2">
+         <font>
+            <Font name="System Bold Italic" size="71.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <ImageView fitHeight="129.0" fitWidth="135.0" layoutX="272.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/student-male.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="384.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/login-rounded-right-filled.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="59.0" layoutX="351.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/addition_1132888.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="386.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/check-box-1294836_960_720.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="27.0" layoutX="289.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kisspng-padlock-computer-icons-lock-and-key-5b166e7eb30f31.2833583115281967347334.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="507.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/reset_password_1201020.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="16.0" layoutX="400.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/user.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

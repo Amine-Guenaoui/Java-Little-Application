@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="352.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamation.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="388.0" fitWidth="486.0" layoutX="-24.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../img/fond_slide1.jpg" />
+         </image>
+      </ImageView>
+      <ChoiceBox id="glass_g" fx:id="ch" layoutX="144.0" layoutY="154.0" prefHeight="28.0" prefWidth="175.0" stylesheets="@../css/Button.css" />
+      <Button id="green" layoutX="144.0" layoutY="268.0" mnemonicParsing="false" onAction="#Connexion" prefHeight="20.0" prefWidth="175.0" stylesheets="@../css/Button.css" text="Connecter">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button id="red" alignment="TOP_CENTER" layoutX="177.0" layoutY="308.0" minWidth="50.0" mnemonicParsing="false" onAction="#Creat" prefHeight="30.0" prefWidth="112.0" stylesheets="@../css/Button.css" text="Sinscrire?">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextField id="glass_g" fx:id="username" layoutX="144.0" layoutY="192.0" prefHeight="31.0" prefWidth="175.0" promptText="Nom utilisateur" stylesheets="@../css/Button.css" />
+      <Label layoutX="172.0" layoutY="122.0" text="Vous êtes?" textFill="#000000e9">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <PasswordField id="glass_g" fx:id="password" layoutX="144.0" layoutY="230.0" prefHeight="31.0" prefWidth="175.0" promptText="Mot de passe" stylesheets="@../css/Button.css" />
+      <Label layoutX="91.0" layoutY="66.0" prefHeight="53.0" prefWidth="309.0" text="Connecter vous!" textFill="#000000f5">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <ImageView fitHeight="77.0" fitWidth="121.0" layoutX="174.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/etudiant.png" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="283.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/user.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="284.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/unlocked-padlock_318-50483.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="283.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/login-rounded-right-filled.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

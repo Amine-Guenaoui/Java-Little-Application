@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="309.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamation.Nouveau_compteController">
+   <children>
+      <ImageView fitHeight="329.0" fitWidth="424.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/study.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <TextField fx:id="nom" layoutX="48.0" layoutY="48.0" promptText="votre nom" />
+      <TextField fx:id="prenom" layoutX="205.0" layoutY="48.0" prefHeight="25.0" prefWidth="178.0" promptText="votre prenom" />
+      <TextField fx:id="specialite" layoutX="48.0" layoutY="108.0" prefHeight="17.0" prefWidth="149.0" promptText="voytre specialite" />
+      <PasswordField fx:id="num" layoutX="209.0" layoutY="109.0" prefHeight="25.0" prefWidth="178.0" promptText="votre num" />
+      <Label layoutX="49.0" layoutY="23.0" text="Nom">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="85.0" text="Specialite">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="23.0" text="Prenom">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="86.0" text="Num">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="125.0" layoutY="213.0" mnemonicParsing="false" onAction="#Creation_nv" prefHeight="30.0" prefWidth="166.0" text="Valider">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="103.0" layoutY="295.0" textFill="#ed0505" />
+      <Button layoutX="126.0" layoutY="255.0" mnemonicParsing="false" onAction="#Retour" prefHeight="31.0" prefWidth="166.0" text="Retour">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Label layoutX="50.0" layoutY="147.0" text="Mot de passe">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="mot_p" layoutX="49.0" layoutY="170.0" prefHeight="25.0" prefWidth="149.0" promptText="votre mot de passe" />
+      <Label layoutX="205.0" layoutY="147.0" text="Confirmer mot de passe">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="208.0" layoutY="170.0" prefHeight="25.0" prefWidth="178.0" promptText="confirmer votre mot de passe" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="176.0" prefWidth="291.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="reclamation.DialogueconfConfirmationFXMLController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dialoguebackground.jpg" />
+         </image>
+         <effect>
+            <BoxBlur iterations="3" />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="332.0">
+         <children>
+            <Button layoutX="72.0" layoutY="162.0" mnemonicParsing="false" onAction="#yesDialogueAnswer" prefHeight="25.0" prefWidth="53.0" text="Oui" />
+            <Button layoutX="207.0" layoutY="162.0" mnemonicParsing="false" onAction="#noDialogueAnswer" prefHeight="25.0" prefWidth="53.0" text="non" />
+            <Text layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous allez modifier vos donnes du profile ?">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="50.0" fitWidth="82.0" layoutX="141.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/interrogation.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

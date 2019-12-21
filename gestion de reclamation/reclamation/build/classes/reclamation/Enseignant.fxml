@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reclamation.EnseignantController">
+   <children>
+      <ImageView fitHeight="521.0" fitWidth="677.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fond_slide1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="164.0" layoutY="88.0" text="Espace Enseigant" textFill="#000000f3">
+         <font>
+            <Font name="System Bold Italic" size="51.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Button id="red" layoutX="284.0" layoutY="447.0" mnemonicParsing="false" onAction="#change" prefHeight="51.0" prefWidth="117.0" stylesheets="@../css/Button.css" text="Retour">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
